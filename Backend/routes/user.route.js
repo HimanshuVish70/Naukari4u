@@ -1,7 +1,7 @@
 import express from "express";
 import { login, logout, register, updateProfile } from "../controllers/user.controller.js";
 import isAuthenticated from "../middlewares/isAuthenticated.js";
-import { singleUpload } from "../middlewares/mutler.js";
+import { singleUpload } from "../middlewares/multer.js";
 
 
  //This line creates a new router object using Express. Routers in Express are used to handle different routes in your application,

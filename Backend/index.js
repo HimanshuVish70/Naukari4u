@@ -11,6 +11,14 @@ import applicationRoute from "./routes/application.route.js";
 dotenv.config({});
 
 const app = express();
+app.get("/home",(req,res)=>{
+    return res.status(200).json({
+      message:"Welcome to the backend",
+      success:true 
+    })
+    ;
+}
+)
 
 // middleware
 app.use(express.json());
@@ -23,7 +31,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 
 
 // api's

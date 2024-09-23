@@ -35,7 +35,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        const formData = new FormData();
+        const formData = new formData();
         formData.append("fullname", input.fullname);
         formData.append("email", input.email);
         formData.append("phoneNumber", input.phoneNumber);
