@@ -71,11 +71,12 @@ const Signup = () => {
         <div>
             <Navbar />
             <div className='flex items-center justify-center max-w-7xl mx-auto'>
-                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
-                    <h1 className='font-bold text-xl mb-5'>Sign Up</h1>
-                    <div className='my-2'>
-                        <Label>Full Name</Label>
+                <form onSubmit={submitHandler} className='w-1/2 login-container border-gray-500 rounded-md p-9 my-4 FormLogin'>
+                    <h1 className='font-bold text-4xl mb-5 LogHead'>Sign Up</h1>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">Full Name</Label>
                         <Input
+                            className='InputLogin'
                             type="text"
                             value={input.fullname}
                             name="fullname"
@@ -83,9 +84,10 @@ const Signup = () => {
                             placeholder="Enter your full name"
                         />
                     </div>
-                    <div className='my-2'>
-                        <Label>Email</Label>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">Email</Label>
                         <Input
+                            className='InputLogin'
                             type="email"
                             value={input.email}
                             name="email"
@@ -93,9 +95,10 @@ const Signup = () => {
                             placeholder="abc@gmail.com"
                         />
                     </div>
-                    <div className='my-2'>
-                        <Label>Phone Number</Label>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">Phone Number</Label>
                         <Input
+                            className='InputLogin'
                             type="text"
                             value={input.phoneNumber}
                             name="phoneNumber"
@@ -103,9 +106,10 @@ const Signup = () => {
                             placeholder="7070707070"
                         />
                     </div>
-                    <div className='my-2'>
-                        <Label>Password</Label>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">Password</Label>
                         <Input
+                            className='InputLogin'
                             type="password"
                             value={input.password}
                             name="password"
@@ -113,7 +117,7 @@ const Signup = () => {
                             placeholder="abc@123"
                         />
                     </div>
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center justify-between Profile'>
                         <RadioGroup className="flex items-center gap-4 my-5">
                             <div className="flex items-center space-x-2">
                                 <Input
@@ -139,7 +143,7 @@ const Signup = () => {
                             </div>
                         </RadioGroup>
                         <div className='flex items-center gap-2'>
-                            <Label>Profile</Label>
+                            <Label className="label">Profile</Label>
                             <Input
                                 accept="image/*"
                                 type="file"
@@ -148,10 +152,12 @@ const Signup = () => {
                             />
                         </div>
                     </div>
-                    {
-                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Signup</Button>
-                    }
-                    <span className='text-sm'>Already have an account? <Link to="/login" className='text-blue-600'>Login</Link></span>
+                    <div className="loginbtnContainer">
+                        {
+                            loading ? <Button className=" my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin btnLogin logBtn' /> Please wait </Button> : <Button type="submit" className="w-full my-4 btnLogin logBtn">Signup</Button>
+                        }
+                        <span className='text-sm'>Already have an account? <Link to="/login" className='text-blue-600'>Login</Link></span>
+                    </div>
                 </form>
             </div>
         </div>

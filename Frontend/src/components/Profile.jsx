@@ -21,14 +21,14 @@ const Profile = () => {
     return (
         <div>
             <Navbar />
-            <div className='max-w-4xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-8'>
+            <div className='max-w-5xl mx-auto bg-white border border-gray-200 my-5 p-10 profileBG'>
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-4'>
-                        <Avatar className="h-24 w-24">
+                        <Avatar className="h-24 w-24 shape">
                             <AvatarImage src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg" alt="profile" />
                         </Avatar>
                         <div>
-                            <h1 className='font-medium text-xl'>{user?.fullname}</h1>
+                            <h1 className='font-medium text-3xl Username'>{user?.fullname}</h1>
                             <p>{user?.profile?.bio}</p>
                         </div>
                     </div>
@@ -45,22 +45,22 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='my-5'>
-                    <h1>Skills</h1>
+                    <h1 className='skill'>Skills</h1>
                     <div className='flex items-center gap-1'>
                         {
-                            user?.profile?.skills.length !== 0 ? user?.profile?.skills.map((item, index) => <Badge key={index}>{item}</Badge>) : <span>NA</span>
+                            user?.profile?.skills.length !== 0 ? user?.profile?.skills.map((item, index) => <Badge key={index}>{item}</Badge>) : <span>N/A</span>
                         }
                     </div>
                 </div>
                 <div className='grid w-full max-w-sm items-center gap-1.5'>
                     <Label className="text-md font-bold">Resume</Label>
                     {
-                        isResume ? <a target='blank' href={user?.profile?.resume} className='text-blue-500 w-full hover:underline cursor-pointer'>{user?.profile?.resumeOriginalName}</a> : <span>NA</span>
+                        isResume ? <a target='blank' href={user?.profile?.resume} className='text-blue-500 w-full hover:underline cursor-pointer'>{user?.profile?.resumeOriginalName}</a> : <span>N/A</span>
                     }
                 </div>
             </div>
-            <div className='max-w-4xl mx-auto bg-white rounded-2xl'>
-                <h1 className='font-bold text-lg my-5'>Applied Jobs</h1>
+            <div className='max-w-4xl mx-auto bg-white rounded-2xl appliedJobsContainer'>
+                <h1 className='font-bold text-lg my-5 aplliedJobs'>Applied Jobs</h1>
                 {/* Applied Job Table   */}
                 <AppliedJobTable />
             </div>

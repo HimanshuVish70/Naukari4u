@@ -71,14 +71,14 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
     return (
         <div>
             <Dialog open={open}>
-                <DialogContent className="sm:max-w-[425px]" onInteractOutside={() => setOpen(false)}>
+                <DialogContent className="" onInteractOutside={() => setOpen(false)}>
                     <DialogHeader>
                         <DialogTitle>Update Profile</DialogTitle>
                     </DialogHeader>
                     <form onSubmit={submitHandler}>
                         <div className='grid gap-4 py-4'>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="name" className="text-right">Name</Label>
+                                <Label htmlFor="name" className="text-left label">Name</Label>
                                 <Input
                                     id="name"
                                     name="name"
@@ -89,7 +89,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="email" className="text-right">Email</Label>
+                                <Label htmlFor="email" className="text-left label">Email</Label>
                                 <Input
                                     id="email"
                                     name="email"
@@ -100,7 +100,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="number" className="text-right">Number</Label>
+                                <Label htmlFor="number" className="text-left label">Number</Label>
                                 <Input
                                     id="number"
                                     name="number"
@@ -110,7 +110,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="bio" className="text-right">Bio</Label>
+                                <Label htmlFor="bio" className="text-left label">Bio</Label>
                                 <Input
                                     id="bio"
                                     name="bio"
@@ -120,7 +120,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="skills" className="text-right">Skills</Label>
+                                <Label htmlFor="skills" className="text-left label">Skills</Label>
                                 <Input
                                     id="skills"
                                     name="skills"
@@ -130,7 +130,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                             <div className='grid grid-cols-4 items-center gap-4'>
-                                <Label htmlFor="file" className="text-right">Resume</Label>
+                                <Label htmlFor="file" className="text-left label">Resume</Label>
                                 <Input
                                     id="file"
                                     name="file"
@@ -141,9 +141,9 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
                                 />
                             </div>
                         </div>
-                        <DialogFooter>
+                        <DialogFooter className="btnUpdate">
                             {
-                                loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Update</Button>
+                                loading ? <Button className="w-full my-4 "> <Loader2 className=' animate-spin btnLogin logBtn' /> Please wait </Button> : <Button type="submit" className="w-full my-4  btnLogin logBtn">Update</Button>
                             }
                         </DialogFooter>
                     </form>

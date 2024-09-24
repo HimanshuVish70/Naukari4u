@@ -78,3 +78,256 @@
     color: rgb(189, 40, 7);
     /* font-size: 2px; */
 }
+.home{
+  background: #005AA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8f8f8, #2886d8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #147cd7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.hr{
+  border: 2px solid #005AA7;
+}
+.heroInput{
+  background-color: rgb(240, 240, 248);
+  color: black;
+  height: 3.5rem;
+  margin-left: -0.76rem;
+  margin-right: -1.9rem;
+  border-radius: 8px;
+  padding-left: 1rem;
+}
+.searchBtn{
+  background-color: #3f5568;  /* fallback for old browsers */
+  height: 3.5rem;
+}
+.searchContainer{
+  border-radius: 10px;
+  border-width: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.fontCompany{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(3, 104, 95);
+}
+.textCompany{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.textCompany2{
+  font-size: 1.2rem;
+}
+.textJob{
+  color: #03696e;
+}
+.head1{
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.card{
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background: linear-gradient(140deg, #ffffff, #71c5d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.3s;
+}
+
+.head2{
+  font-size: 2rem;
+  color: rgb(88, 85, 86);
+}
+.textColor{
+  color: rgb(165, 25, 25);
+}
+.cardfilter{
+  background: linear-gradient(140deg, #ffffff, #71c5d6);
+  display: flex;
+  justify-content: space-between;
+}
+.desc{
+  font-size: 1.4rem;
+  color:#3f5568;
+}
+.headingdesc{
+  font-size: 1.8rem;
+  color:#242f39;
+  font-weight: 700;
+}
+.btnColor{
+  background: #03696e;
+  margin-top: 1rem;
+  margin-left: 45%;
+  width: 10rem;
+  padding: 1rem 2rem;
+  font-size: large;
+}
+.ghost{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.btnLogin{
+  width: 20%;
+}
+.loginbtnContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Loginform{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: space-between;
+  
+}
+.InputLogin{
+  width: 70%;
+}
+.FormLogin{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.logBtn{
+  background-color: #487381;
+}
+.LogHead{
+  text-align: center;
+}
+.label{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.login-container{
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.Profile{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.tr{
+  height: 6rem;
+}
+.Newcompany{
+  color: #2f6697;
+  font-size: 2.5rem;
+}
+.NewCompanyBorder{
+  margin-top: 3rem;
+  border-radius: 35px;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.newCompanyContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputnewcompany{
+  width: 80%;
+  color: #242f39;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.FormPostJob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.borderJobPost{
+  width: 90%;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 35px;
+}
+.InputList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectCompany{
+  width: 30%;
+  height: 3rem;
+  margin-left: 15rem;
+}
+.Username,.SetupHead{
+  color: #16656b;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.profileBG{
+  background: linear-gradient(45deg, #9ae9ed, #4a90f1);
+  border: 0;
+  border-radius: 35px;
+}
+body{
+  background-color: #ffffff;
+}
+.shape{
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+.aplliedJobs{
+  font-size: 1.8rem;
+  text-align: center;
+}
+.appliedJobsContainer{
+  padding: 2rem;
+  margin: 1vh 40vh;
+}
+.skill{
+  font-weight: 700;
+}
+.btnUpdate{
+  padding-left: 100;
+}
+.bgColorProfile{
+  background: linear-gradient(45deg, #9ae9ed, #4a90f1);
+  border: 0;
+}
+.CompanySetup{
+  justify-content: space-between;
+  margin: 0;
+  padding: 2rem 0;
+}
+.Companysetupborder{
+  box-shadow: rgba(22, 22, 184, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 35px;
+  padding: 2rem;
+}
+.CompanySetupLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  width: 25rem;
+}
+.Updatebtn{
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 2rem;
+}
+.UpdateForm{
+  padding: 2rem;
+}
+.SignupNav{
+  background-color: #063a67;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.LoginNav{
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+ .maxHeight{
+  max-height: 4rem;
+  overflow: hidden;
+  max-width: 30rem;
+ }

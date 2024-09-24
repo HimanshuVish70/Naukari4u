@@ -56,12 +56,13 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            <div className='flex items-center justify-center max-w-7xl mx-auto'>
-                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
-                    <h1 className='font-bold text-xl mb-5'>Login</h1>
-                    <div className='my-2'>
-                        <Label>Email</Label>
+            <div className='flex items-center justify-center max-w-7xl mx-auto '>
+                <form onSubmit={submitHandler} className='login-container w-1/2  border-gray-500 rounded-md p-10 my-14 FormLogin'>
+                    <h1 className='font-bold text-4xl mb-5 LogHead'>Login</h1>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">E-mail</Label>
                         <Input
+                            className='InputLogin'
                             type="email"
                             value={input.email}
                             name="email"
@@ -70,9 +71,10 @@ const Login = () => {
                         />
                     </div>
 
-                    <div className='my-2'>
-                        <Label>Password</Label>
+                    <div className='my-2 Loginform'>
+                        <Label className="label">Password</Label>
                         <Input
+                            className='InputLogin'
                             type="password"
                             value={input.password}
                             name="password"
@@ -106,10 +108,12 @@ const Login = () => {
                             </div>
                         </RadioGroup>
                     </div>
-                    {
-                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Login</Button>
-                    }
-                    <span className='text-sm'>Don't have an account? <Link to="/signup" className='text-blue-600'>Signup</Link></span>
+                    <div className="loginbtnContainer">
+                        {
+                            loading ? <Button className=" my-4 "> <Loader2 className='mr-2 h-4 w-4 animate-spin btnLogin logBtn' /> Please wait </Button> : <Button type="submit" className="w-full my-4 btnLogin logBtn">Login</Button>
+                        }
+                        <span className='text-sm '>Don't have an account? <Link to="/signup" className='text-blue-600'>Signup</Link></span>
+                    </div>
                 </form>
             </div>
         </div>

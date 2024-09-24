@@ -35,22 +35,23 @@ const CompanyCreate = () => {
     return (
         <div>
             <Navbar />
-            <div className='max-w-4xl mx-auto'>
-                <div className='my-10'>
-                    <h1 className='font-bold text-2xl'>Your Company Name</h1>
-                    <p className='text-gray-500'>What would you like to give your company name? you can change this later.</p>
+            <div className='max-w-4xl mx-auto NewCompanyBorder'>
+                <div className='my-10 display flex flex-col gap-4 text-center'>
+                    <h1 className='font-bold Newcompany text-4xl'>Choose a name for your company.</h1>
+                    <p className='text-gray-600'> You can modify it later if needed.</p>
                 </div>
-
-                <Label>Company Name</Label>
-                <Input
-                    type="text"
-                    className="my-2"
-                    placeholder="JobHunt, Microsoft etc."
-                    onChange={(e) => setCompanyName(e.target.value)}
-                />
-                <div className='flex items-center gap-2 my-10'>
-                    <Button variant="outline" onClick={() => navigate("/admin/companies")}>Cancel</Button>
-                    <Button onClick={registerNewCompany}>Continue</Button>
+                <div className="newCompanyContainer">
+                    <Label className="label">Company Name</Label>
+                    <Input
+                        type="text"
+                        className="my-3 inputnewcompany"
+                        placeholder="Zidio Development, Google, Microsoft etc."
+                        onChange={(e) => setCompanyName(e.target.value)}
+                    />
+                </div>
+                <div className='flex items-center gap-2 my-10 align-center justify-center'>
+                    <Button variant="outline" onClick={() => navigate("/admin/companies")} className="btnLogin hover:bg-gray-100">Cancel</Button>
+                    <Button onClick={registerNewCompany} className="btnLogin logBtn hover:bg-blue-600">Continue</Button>
                 </div>
             </div>
         </div>
